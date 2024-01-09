@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Exchange Rates</title>
+</head>
+<body>
+    <h1>Historical Exchange Rates (USD to EUR)</h1>
+    <ul>
+        {% for date, rates in historical_data.items() %}
+            <li>{{ date }} - Close: {{ rates['4. close'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
